@@ -1,0 +1,28 @@
+﻿<div class="container" ng-controller="bookListCtrl">
+    <h1>Book list</h1>
+    <table class="table">
+        <tbody>
+        <tr>
+            <th>Index</th>
+            <th>Id</th>
+            <th>Author name</th>
+            <th>Author surname</th>
+            <th>Title</th>
+            <th>Page count</th>
+            <th>Description</th>
+            <th>Publisher</th>
+        </tr>
+        <tr ng-repeat="book in books">
+            <td>{{$index}}</td>
+            <td>{{book.id}}</td>
+            <td>{{book.authorName}}</td>
+            <td>{{book.authorSurname}}</td>
+            <td>{{book.title}}</td>
+            <td>{{book.pageCount}}</td>
+            <td>{{book.description}}</td>
+            <td>{{book.publisher}}</td>
+        </tr>
+        </tbody>
+    </table>
+    <button class="btn btn-default" ng-click="refreshData()">Refresh</button>
+</div>

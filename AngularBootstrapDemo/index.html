@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+<head>
+    <title>My cool site</title>
+    <meta charset="utf-8" />
+    <!-- Libraries -->
+    <script src="assets/libs/jquery.min.js"></script>
+    <script src="assets/libs/bootstrap.min.js"></script>
+    <link href="assets/libs/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/libs/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="assets/libs/angular.min.js"></script>
+    <script src="assets/libs/angular-ui-router.min.js"></script>
+
+    <!-- Angular components -->
+    <script src="app/app.module.js"></script>
+    <script src="app/components/contentCtrl.js"></script>
+    <script src="app/components/header/bootstrapHeaderDirective.js"></script>
+    <script src="app/components/first/bookListCtrl.js"></script>
+    <script src="app/components/second/formCtrl.js"></script>
+</head>
+<body>
+<bootstrap-header></bootstrap-header>
+
+    <div>
+        <div ui-view></div>
+    </div>
+
+</body>
+</html>

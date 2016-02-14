@@ -1,0 +1,29 @@
+﻿<div class="container" ng-controller="formCtrl">
+    <form role="form">
+        <div class="form-group">
+            <label for="authorName">Author name:</label>
+            <input ng-model="book.authorName" type="text" class="form-control" id="authorName">
+        </div>
+        <div class="form-group">
+            <label for="authorSurname">Author surname:</label>
+            <input ng-model="book.authorSurname" type="text" class="form-control" id="authorSurname">
+        </div>
+        <div class="form-group">
+            <label for="title">Title:</label>
+            <input ng-model="book.title" type="text" class="form-control" id="title">
+        </div>
+        <div class="form-group">
+            <label for="pageCount">Page count:</label>
+            <input ng-model="book.pageCount" type="number" class="form-control" id="pageCount">
+        </div>
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <textarea ng-model="book.description" class="form-control" id="description"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="publisher">Publisher:</label>
+            <input ng-model="book.publisher" type="text" class="form-control" id="publisher">
+        </div>
+        <button ng-click="update()" type="submit" class="btn btn-default">Submit</button>
+    </form>
+</div>
