@@ -16,5 +16,10 @@ angular.module('common')
                         alert("Error sending data: " + JSON.stringify({data: data}));
                     });
             }
+
+            $scope.nameIsTooLong = function() {
+                var field = $scope.bookForm['authorName'];
+                return field.$error.maxlength;
+            }
         }
     ]);

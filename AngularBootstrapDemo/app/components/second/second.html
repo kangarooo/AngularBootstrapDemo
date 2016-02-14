@@ -1,8 +1,9 @@
 ﻿<div class="container" ng-controller="formCtrl">
-    <form role="form">
+    <form name="bookForm" role="form" novalidate>
         <div class="form-group">
             <label for="authorName">Author name:</label>
-            <input ng-model="book.authorName" type="text" class="form-control" id="authorName">
+            <input ng-model="book.authorName" ng-maxlength="20" type="text" class="form-control" id="authorName" name="authorName">
+            <span class="label label-danger" ng-if="nameIsTooLong()">Too long!</span>
         </div>
         <div class="form-group">
             <label for="authorSurname">Author surname:</label>
